@@ -132,3 +132,7 @@ https://medium.com/microservices-learning/understanding-the-modern-enterprise-in
 https://ieeexplore.ieee.org/document/7368007 
 
 https://learn.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters
+
+### Video
+
+https://www.youtube.com/watch?v=TX6B7EaSsXc
