@@ -1,0 +1,52 @@
+# Visual Studio files
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+out/
+
+# Dependencies
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework migration files
+[Mm]igrations/
+
+# Logs
+*.log
+*.tlog
+
+# Database files
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# User-specific files
+*.rsuser
+*.sln.docstates
+
+# ASP.NET Core directories
+wwwroot/
+
+# Publish directory
+publish/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Rider workspace files
+*.sln.iml

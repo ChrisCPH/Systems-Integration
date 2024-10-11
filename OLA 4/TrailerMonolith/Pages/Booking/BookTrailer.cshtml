@@ -1,0 +1,33 @@
+@page
+@model TrailerMonolith.Pages.Booking.BookTrailerModel
+@{
+    ViewData["Title"] = "Book a Trailer";
+}
+
+<h2>Book a Trailer</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="TrailerID"></label>
+        <select asp-for="TrailerID" class="form-control" asp-items="Model.TrailerList"></select>
+        <span asp-validation-for="TrailerID" class="text-danger"></span>
+    </div>
+    
+    <div class="form-check">
+        <input asp-for="PurchaseInsurance" class="form-check-input" />
+        <label asp-for="PurchaseInsurance" class="form-check-label">Purchase Insurance</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Book Trailer</button>
+</form>
+
+@if (Model.BookingResult != null)
+{
+    <div class="alert alert-success mt-3">
+        Trailer booked successfully! Rental ID: @Model.BookingResult.RentalID
+    </div>
+}
+
+<div>
+    <a asp-page="/Index">Back to Home</a>
+</div>

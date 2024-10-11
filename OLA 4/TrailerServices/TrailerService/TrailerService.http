@@ -1,0 +1,6 @@
+@TrailerService_HostAddress = http://localhost:5010
+
+GET {{TrailerService_HostAddress}}/
+Accept: application/json
+
+###

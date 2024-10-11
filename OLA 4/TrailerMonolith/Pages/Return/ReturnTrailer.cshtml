@@ -1,0 +1,28 @@
+@page
+@model TrailerMonolith.Pages.Return.ReturnTrailerModel
+@{
+    ViewData["Title"] = "Return a Trailer";
+}
+
+<h2>Return a Trailer</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="RentalID"></label>
+        <input asp-for="RentalID" class="form-control" />
+        <span asp-validation-for="RentalID" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Return Trailer</button>
+</form>
+
+@if (Model.ReturnResult != null)
+{
+    <div class="alert alert-success mt-3">
+        Trailer returned successfully!
+    </div>
+}
+
+<div>
+    <a asp-page="/Index">Back to Home</a>
+</div>
